@@ -27,3 +27,13 @@ blockchain = [
 # Anthony's KelloggCoin balance is 2650
 
 # 👇👇👇 Your code HERE 👇👇👇
+wallet = [{"user" => "Ben's", "amount" => 14000}, {"user" => "Brian's", "amount" => 13000}, {"user" => "Evan's", "amount" => 10350}, {"user" => "Anthony's", "amount" => 2650}]
+index = 0
+loop do
+  if index == wallet.size
+    break
+  end
+wallets = wallet[index]
+puts "#{wallets["user"]} KelloggCoin balance is #{wallets["amount"]} "
+index = index + 1
+end
